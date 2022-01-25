@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+.bank {
+  color: rgba(17, 52, 54, 1);
+  color: rgba(19, 101, 106, 1);
+  color: rgba(5, 144, 125, 1);
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  font-size: 10px;
+  background: rgb(17, 52, 54);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: rgb(17, 52, 54);
+  background: -moz-linear-gradient(
+    108deg,
+    rgba(17, 52, 54, 1) 0%,
+    rgba(19, 101, 106, 1) 50%,
+    rgba(5, 144, 125, 1) 83%
+  );
+  background: -webkit-linear-gradient(
+    108deg,
+    rgba(17, 52, 54, 1) 0%,
+    rgba(19, 101, 106, 1) 50%,
+    rgba(5, 144, 125, 1) 83%
+  );
+  background: linear-gradient(
+    108deg,
+    rgba(17, 52, 54, 1) 0%,
+    rgba(19, 101, 106, 1) 50%,
+    rgba(5, 144, 125, 1) 83%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#113436",endColorstr="#05907d",GradientType=1);
+  height: 500vh;
+  color: #f0f0f0;
+}
+
+h1,
+h2 {
+  font-size: 4.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.6rem;
+}
+
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 3.6rem;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+
+.spacer-line {
+  height: 0.2rem;
+  width: 80%;
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+.fontAweIcon {
+  font-size: 3.4rem;
+  margin: 3rem;
+}
+
+.home {
+  height: 90vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.socials-container {
+  padding: 8rem 0;
+  height: 35%;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* #region Scroll bar */
+
+::-webkit-scrollbar {
+  width: 1rem;
 }
+
+::-webkit-scrollbar-track {
+  margin: 1rem;
+  background: rgba(128, 128, 128, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.466);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(18, 87, 81, 0.452);
+}
+::-webkit-scrollbar-thumb:active {
+  background: #55505c7c;
+}
+/* #endregion */
