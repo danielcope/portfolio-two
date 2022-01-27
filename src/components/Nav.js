@@ -1,21 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Nav = () => {
+  const [menu, flipMenu] = useState(false);
+
   return (
     <section>
-      <div className="ham-menu">
-        <div className="ham-top"></div>
-        <div className="ham-mid"></div>
-        <div className="ham-bot"></div>
+      <div
+        className={!menu ? "ham-menu-closed" : "ham-menu-opened"}
+        onClick={() => flipMenu(!menu)}
+      >
+        <div className={!menu ? "ham-top" : "ham-top-x"}></div>
+        <div className={!menu ? "ham-mid" : "ham-mid-x"}></div>
+        <div className={!menu ? "ham-bot" : "ham-bot-x"}></div>
       </div>
 
-      <nav>
+      {/* <nav>
         <ul>
           <li></li>
           <li>About</li>
           <li>Work</li>
         </ul>
-      </nav>
+      </nav> */}
     </section>
   );
 };
