@@ -5,23 +5,34 @@ const Nav = () => {
 
   return (
     <section>
-      <div
-        className={!menu ? "ham-menu-closed" : "ham-menu-opened"}
-        onClick={() => flipMenu(!menu)}
-      >
-        <div className={!menu ? "ham-top" : "ham-top-x"}></div>
-        <div className={!menu ? "ham-mid" : "ham-mid-x"}></div>
-        <div className={!menu ? "ham-bot" : "ham-bot-x"}></div>
-      </div>
-
-      {/* <nav>
-        <ul>
-          <li></li>
-          <li>About</li>
-          <li>Work</li>
-        </ul>
-      </nav> */}
+      <MenuButton menu={menu} flipMenu={flipMenu} />
+      <NavMenu menu={menu} />
     </section>
+  );
+};
+
+const NavMenu = (props) => {
+  return (
+    <nav className={!props.menu ? "nav-closed" : "nav-opened"}>
+      <ul>
+        <li>About</li>
+        <li>Work</li>
+        <li>Resume</li>
+      </ul>
+    </nav>
+  );
+};
+
+const MenuButton = (props) => {
+  return (
+    <div
+      className="ham-button-container"
+      onClick={() => props.flipMenu(!props.menu)}
+    >
+      <div className={!props.menu ? "line top-line" : "line top-line-x"}></div>
+      <div className={!props.menu ? "line mid-line" : "line mid-line-x"}></div>
+      <div className={!props.menu ? "line bot-line" : "line bot-line-x"}></div>
+    </div>
   );
 };
 
