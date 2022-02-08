@@ -39,9 +39,10 @@ body {
     rgba(5, 144, 125, 1) 83%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#113436",endColorstr="#05907d",GradientType=1);
-  height: 500vh;
+  min-height: 300vh;
   color: #f0f0f0;
   overflow: overlay;
+  padding: 0 0 45px 0;
 }
 
 h1,
@@ -282,6 +283,60 @@ nav > a {
 .about-me li {
   font-size: 1.6rem;
   margin: 0 0 0 15px;
+}
+
+/* #endregion */
+
+/* #region Work */
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  padding: 25px 0 0 0;
+}
+
+.work-container {
+  min-height: 700px;
+  width: 85%;
+}
+
+.each-work {
+  width: 100%;
+  min-height: 500px;
+  background: #f0f0f010;
+  margin: 25px 0 0 0;
+  padding: 35px 15px 25px 35px;
+  border-radius: 15px;
+}
+
+.each-work h5 {
+  font-size: 2rem;
+  font-weight: 75;
+  text-decoration: underline;
+}
+
+.each-work h6 {
+  font-size: 2rem;
+  font-weight: 75;
+  margin: 35px 0 0 0;
+}
+
+.each-work p {
+  font-size: 1.4rem;
+  margin: 25px 0 0 0;
+}
+
+.fa-link-icon {
+  margin: 0 0 0 15px;
+}
+
+.each-work img {
+  width: 90%;
+  margin: 45px 0 0 0;
+  border-radius: 7.5px;
 }
 
 /* #endregion */
