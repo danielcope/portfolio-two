@@ -14,14 +14,7 @@ const Nav = () => {
 const NavMenu = (props) => {
   return (
     <nav className={!props.menu ? "nav-closed" : "nav-opened"}>
-      <section>
-        <div className="d-letter">
-          <span>D</span>
-        </div>
-        <div className="c-letter">
-          <span>C</span>
-        </div>
-      </section>
+      <DCLogo />
       <ul>
         <li>About</li>
         <li>Work</li>
@@ -41,6 +34,19 @@ const MenuButton = (props) => {
       <div className={!props.menu ? "line mid-line" : "line mid-line-x"}></div>
       <div className={!props.menu ? "line bot-line" : "line bot-line-x"}></div>
     </div>
+  );
+};
+
+const DCLogo = () => {
+  return (
+    <section>
+      <div className="d-letter">
+        <span>D</span>
+      </div>
+      <div className="c-letter">
+        <span>C</span>
+      </div>
+    </section>
   );
 };
 

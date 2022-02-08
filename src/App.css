@@ -104,12 +104,12 @@ nav {
 .nav-opened {
   top: 0;
   left: 0;
-  transition: all 0.75s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .nav-closed {
   top: 0px;
   left: -615px;
-  transition: all 0.75s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .ham-button-container {
@@ -122,6 +122,10 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   z-index: 4;
+}
+
+.ham-button-container:hover {
+  cursor: pointer;
 }
 
 .line {
@@ -154,7 +158,7 @@ nav {
 .d-letter,
 .c-letter {
   font-size: 8rem;
-  font-weight: 600;
+  font-weight: 650;
   position: relative;
 }
 
