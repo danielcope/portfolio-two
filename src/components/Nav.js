@@ -19,7 +19,9 @@ const NavMenu = (props) => {
         <li>
           <a href="#about-me">About</a>
         </li>
-        <li>Work</li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
         <li>Resume</li>
       </ul>
     </nav>
