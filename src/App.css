@@ -41,6 +41,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#113436",endColorstr="#05907d",GradientType=1);
   height: 500vh;
   color: #f0f0f0;
+  overflow: overlay;
 }
 
 h1,
@@ -73,7 +74,6 @@ ul {
   height: 50%;
   width: 80%;
   list-style: none;
-  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -83,6 +83,19 @@ ul {
 li {
   font-size: 2.4rem;
   font-family: "Montserrat", sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #f0f0f0;
+  margin: none;
+  padding: none;
+  letter-spacing: normal;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 /* #region Nav */
@@ -99,6 +112,10 @@ nav {
   align-items: center;
   justify-content: center;
   filter: blur(0px);
+}
+
+nav ul {
+  z-index: 3;
 }
 
 .nav-opened {
@@ -176,29 +193,17 @@ nav {
   right: 10px;
 }
 
-nav > section {
+nav > a {
   display: flex;
   width: 110px;
 }
 
 /* #endregion */
 
-.spacer-line {
-  height: 0.2rem;
-  width: 55%;
-  background: #f0f0f0;
-  border-radius: 5px;
-}
-
-.fontAweIcon {
-  font-size: 3.4rem;
-  margin: 3rem;
-}
-
 /* #region Home */
 
 .home {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -217,6 +222,68 @@ nav > section {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
+.fontAweIcon {
+  font-size: 3.4rem;
+  margin: 3rem;
+}
+
+.spacer-line {
+  height: 0.2rem;
+  width: 55%;
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+/* #endregion */
+
+/* #region About Me */
+
+.about-me {
+  background: #f0f0f010;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-me p {
+  width: 60%;
+}
+
+.about-me section {
+  width: 55%;
+  max-width: 250px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  background: #f0f0f010;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.stack-icons-container {
+  width: 25%;
+  height: 100%;
+}
+
+.stack-icon {
+  font-size: 3rem;
+}
+
+.stack-names {
+  height: 100%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-me li {
+  font-size: 1.6rem;
+  margin: 0 0 0 15px;
+}
+
 /* #endregion */
 
 /* #region Scroll bar */
@@ -235,9 +302,9 @@ nav > section {
   background: rgba(0, 0, 0, 0.466);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(18, 87, 81, 0.452);
+  background: rgba(0, 0, 0, 0.178);
 }
 ::-webkit-scrollbar-thumb:active {
-  background: #55505c7c;
+  background: #000000a6;
 }
 /* #endregion */

@@ -16,7 +16,9 @@ const NavMenu = (props) => {
     <nav className={!props.menu ? "nav-closed" : "nav-opened"}>
       <DCLogo />
       <ul>
-        <li>About</li>
+        <li>
+          <a href="#about-me">About</a>
+        </li>
         <li>Work</li>
         <li>Resume</li>
       </ul>
@@ -39,14 +41,14 @@ const MenuButton = (props) => {
 
 const DCLogo = () => {
   return (
-    <section>
+    <a href="#home">
       <div className="d-letter">
         <span>D</span>
       </div>
       <div className="c-letter">
         <span>C</span>
       </div>
-    </section>
+    </a>
   );
 };
 
