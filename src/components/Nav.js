@@ -14,6 +14,14 @@ const Nav = () => {
 const NavMenu = (props) => {
   return (
     <nav className={!props.menu ? "nav-closed" : "nav-opened"}>
+      <section>
+        <div className="d-letter">
+          <span>D</span>
+        </div>
+        <div className="c-letter">
+          <span>C</span>
+        </div>
+      </section>
       <ul>
         <li>About</li>
         <li>Work</li>

@@ -15,6 +15,7 @@
 html {
   font-size: 10px;
   background: rgb(17, 52, 54);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -81,17 +82,20 @@ ul {
 
 li {
   font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* #region Nav */
 
 nav {
   height: 100vh;
-  width: 90vw;
+  width: 100vw;
+  max-width: 600px;
   background: rgba(17, 17, 17, 0.938);
-  border-radius: 0 15px 15px 0;
+  box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.705);
   position: fixed;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   filter: blur(0px);
@@ -104,9 +108,10 @@ nav {
 }
 .nav-closed {
   top: 0px;
-  left: -400px;
+  left: -615px;
   transition: all 0.75s ease-in-out;
 }
+
 .ham-button-container {
   width: 35px;
   height: 25px;
@@ -143,7 +148,33 @@ nav {
 .mid-line-x,
 .bot-line-x {
   position: relative;
-  transition: all 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+}
+
+.d-letter,
+.c-letter {
+  font-size: 8rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.d-letter {
+  transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  left: 10px;
+}
+
+.c-letter {
+  right: 10px;
+}
+
+nav > section {
+  display: flex;
+  width: 110px;
 }
 
 /* #endregion */
@@ -159,6 +190,8 @@ nav {
   font-size: 3.4rem;
   margin: 3rem;
 }
+
+/* #region Home */
 
 .home {
   height: 90vh;
@@ -180,6 +213,7 @@ nav {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+/* #endregion */
 
 /* #region Scroll bar */
 
