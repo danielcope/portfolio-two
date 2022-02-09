@@ -14,12 +14,10 @@
 
 html {
   font-size: 10px;
-  background: rgb(17, 52, 54);
   scroll-behavior: smooth;
 }
 
 body {
-  background: rgb(17, 52, 54);
   background: -moz-linear-gradient(
     108deg,
     rgba(17, 52, 54, 1) 0%,
