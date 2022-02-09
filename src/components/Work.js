@@ -5,6 +5,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import aqt from "../img/aqt.PNG";
 import hingesite from "../img/hingesite.PNG";
 import rrtrucks from "../img/rrtrucks.PNG";
+import simplop from "../img/simplop.PNG";
 
 const Work = () => {
   return (
@@ -15,7 +16,7 @@ const Work = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Work <FontAwesomeIcon icon={faGithub} />
+          Work <FontAwesomeIcon className="github-work-icon" icon={faGithub} />
         </a>
       </h3>
       <WorkContainer />
@@ -26,14 +27,6 @@ const Work = () => {
 const WorkContainer = () => {
   const info = [
     {
-      name: "Adventure Quest",
-      img: aqt,
-      imgAlt: "adventure quest log site img",
-      summary:
-        "A tracking tool for DnD enthusiasts. This full-stack application use React, React Router, Redux, and CSS for the frontend and Node.js, Express, and PostgreSQL for the back end. It pulls from an 3rd party API for some data about spells. It has full CRUD authentication with Bcrypt.",
-      url: "https://adventurequestlog.com/",
-    },
-    {
       name: "Hinge Software",
       img: hingesite,
       imgAlt: "hinge software site img",
@@ -42,11 +35,27 @@ const WorkContainer = () => {
       url: "https://hingeplayground.com/",
     },
     {
+      name: "Adventure Quest",
+      img: aqt,
+      imgAlt: "adventure quest log site img",
+      summary:
+        "A tracking tool for DnD enthusiasts. This full-stack application use React, React Router, Redux, and CSS for the frontend and Node.js, Express, and PostgreSQL for the back end. It pulls from an 3rd party API for some data about spells. It has full CRUD authentication with Bcrypt.",
+      url: "https://adventurequestlog.com/",
+    },
+    {
       name: "Roadrunners Trucking",
       img: rrtrucks,
       imgAlt: "Roadrunners Trucking site img",
       summary:
         "A website built for Roadrunners Trucking in California. Uses React and React Router for the frontend. A simple, modern design for a better user experience.",
+      url: "https://www.roadrunnerstrucks.com/",
+    },
+    {
+      name: "Simplop",
+      img: simplop,
+      imgAlt: "simplop.com site img",
+      summary:
+        "A full stack web application with a React frontend. A training tool for parents with potty training children. It utilizes Redux, React Routing, and CSS on the front end. Node.js, Express, and PostgreSQL are used on the back end for API requests, data transfer/storage and database queries.",
       url: "https://www.roadrunnerstrucks.com/",
     },
   ];
@@ -67,7 +76,7 @@ const WorkContainer = () => {
 
 const EachWork = (props) => {
   return (
-    <section className="each-work">
+    <section className="each-work" data-aos="fade-left" data-aos-duration="500">
       <h5>
         <a href={props.url} target="_blank" rel="noopener noreferrer">
           {props.name}{" "}

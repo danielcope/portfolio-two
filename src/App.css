@@ -121,6 +121,7 @@ nav li {
   width: 150px;
   height: 50px;
   text-align: center;
+  font-weight: 750;
 }
 
 nav > a {
@@ -297,29 +298,29 @@ nav a:hover {
   height: 400px;
   display: flex;
   align-items: center;
+  justify-content: center;
   background: #f0f0f010;
   padding: 15px;
   border-radius: 15px;
 }
 
-.stack-icons-container {
-  width: 25%;
-  height: 100%;
-}
-
 .stack-icon {
-  font-size: 3rem;
+  font-size: 2.6rem;
+  margin: 0 25px 0 0;
 }
 
 .stack-names {
+  border-radius: 0;
   height: 100%;
-  width: 75%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .about-me li {
+  display: flex;
+  justify-content: center;
   font-size: 1.6rem;
   margin: 0 0 0 15px;
 }
@@ -339,6 +340,12 @@ nav a:hover {
 
 .work h3 {
   margin: 20px 0;
+  transition: all 0.35s ease-in-out;
+}
+
+.work h3:hover .github-work-icon {
+  font-size: 4rem;
+  transition: all 0.35s ease-in-out;
 }
 
 .work-container {
@@ -350,12 +357,12 @@ nav a:hover {
 }
 
 .each-work {
-  width: 100%;
+  width: 90%;
   max-width: 800px;
   min-height: 500px;
   background: #f0f0f010;
   margin: 25px 0 0 0;
-  padding: 35px 35px;
+  padding: 35px;
   border-radius: 15px;
 }
 

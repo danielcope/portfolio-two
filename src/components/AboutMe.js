@@ -9,6 +9,19 @@ import {
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 const AboutMe = () => {
+  const tech = [
+    { icon: faReact, tech: "React" },
+    { icon: faHtml5, tech: "HTML5" },
+    { icon: faCss3Alt, tech: "CSS3" },
+    { icon: faNodeJs, tech: "Node.js" },
+    { icon: faAws, tech: "AWS" },
+    { icon: faDatabase, tech: "PostgreSQL" },
+  ];
+
+  const mappedTech = tech.map((ele, i) => (
+    <StackRow key={ele.tech} icon={ele.icon} tech={ele.tech} />
+  ));
+
   return (
     <section className="about-me" id="about-me">
       <section className="about-me-container-one">
@@ -22,24 +35,18 @@ const AboutMe = () => {
         </p>
       </section>
       <section className="stack">
-        <ul className="stack-icons-container">
-          <FontAwesomeIcon className="stack-icon" icon={faReact} />
-          <FontAwesomeIcon className="stack-icon" icon={faNodeJs} />
-          <FontAwesomeIcon className="stack-icon" icon={faAws} />
-          <FontAwesomeIcon className="stack-icon" icon={faDatabase} />
-          <FontAwesomeIcon className="stack-icon" icon={faHtml5} />
-          <FontAwesomeIcon className="stack-icon" icon={faCss3Alt} />
-        </ul>
-        <ul className="stack-names">
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Amazon Web Services</li>
-          <li>PostgreSQL</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
+        <ul className="stack-names">{mappedTech}</ul>
       </section>
     </section>
+  );
+};
+
+const StackRow = (props) => {
+  return (
+    <li>
+      <FontAwesomeIcon className="stack-icon" icon={props.icon} />
+      <span >{props.tech}</span>
+    </li>
   );
 };
 
