@@ -11,14 +11,16 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 const AboutMe = () => {
   return (
     <section className="about-me" id="about-me">
-      <h5>About Me</h5>
-      <p>
-        I’m a full-stack web developer, frontend and backend. I’m passionate
-        about creating new a exciting products. I have mostly work with React,
-        Node.js, Express, PostgreSQL, and AWS. <br></br>
-        <br></br> I’m also a big rock climber and an adventurer. I moved to Utah
-        from California a few years ago to be closer to the mountains.{" "}
-      </p>
+      <section className="about-me-container-one">
+        <h5>About Me</h5>
+        <p>
+          I’m a full-stack web developer, frontend and backend. I’m passionate
+          about creating new a exciting products. I have mostly work with React,
+          Node.js, Express, PostgreSQL, and AWS. <br></br>
+          <br></br> I’m also a big rock climber and an adventurer. I moved to
+          Utah from California a few years ago to be closer to the mountains.{" "}
+        </p>
+      </section>
       <section className="stack">
         <ul className="stack-icons-container">
           <FontAwesomeIcon className="stack-icon" icon={faReact} />

@@ -270,17 +270,23 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 45px 0;
+  padding: 45px 45px;
 }
 
 .about-me p {
-  width: 60%;
+  width: 90%;
   max-width: 400px;
   margin: 35px 0;
 }
 
-.about-me section {
-  width: 55%;
+.about-me-container-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stack {
+  width: 80%;
   max-width: 250px;
   height: 400px;
   display: flex;
@@ -410,9 +416,11 @@ nav a:hover {
     left: 0;
     width: 400px;
   }
+  .ham-button-container {
+    display: none;
+  }
 
   .about-me p {
-    width: 40%;
     font-size: 2rem;
   }
 
@@ -438,5 +446,24 @@ nav a:hover {
   .nav-opened {
     left: 0;
     width: 600px;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  .about-me {
+    flex-direction: row;
+  }
+
+  .stack {
+    height: 600px;
+    max-width: 475px;
+  }
+
+  .stack-icon {
+    font-size: 2.8rem;
+  }
+
+  .about-me li {
+    font-size: 2.8rem;
   }
 }
