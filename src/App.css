@@ -190,6 +190,7 @@ nav a:hover {
 }
 
 .d-letter,
+.d-letter-flipped,
 .c-letter {
   font-size: 8rem;
   font-weight: 650;
@@ -197,12 +198,19 @@ nav a:hover {
 }
 
 .d-letter {
+  left: 10px;
+  transition: transform 1s ease-in-out;
+}
+
+.d-letter-flipped {
   transform: scale(-1, 1);
   -moz-transform: scale(-1, 1);
   -webkit-transform: scale(-1, 1);
   -o-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
+  transition: transform 1.25s ease-in-out;
+  transition-delay: 0.5s;
   left: 10px;
 }
 
@@ -434,6 +442,19 @@ nav a:hover {
 
   .each-work h6 {
     font-size: 2.4rem;
+  }
+
+  .d-letter-flipped,
+  .d-letter {
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    transition: transform 1.5s ease-in-out;
+    transition-delay: 0.65s;
+    left: 10px;
   }
 }
 

@@ -14,7 +14,7 @@ const Nav = () => {
 const NavMenu = (props) => {
   return (
     <nav className={!props.menu ? "nav-closed" : "nav-opened"}>
-      <DCLogo />
+      <DCLogo menu={props.menu} />
       <ul>
         <li>
           <a href="#about-me">About</a>
@@ -49,10 +49,10 @@ const MenuButton = (props) => {
   );
 };
 
-const DCLogo = () => {
+const DCLogo = (props) => {
   return (
     <a href="#home">
-      <div className="d-letter">
+      <div className={!props.menu ? "d-letter" : "d-letter-flipped"}>
         <span>D</span>
       </div>
       <div className="c-letter">
