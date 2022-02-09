@@ -22,7 +22,15 @@ const NavMenu = (props) => {
         <li>
           <a href="#work">Work</a>
         </li>
-        <li>Resume</li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1yn6Z8WsOq5tiv36tobqIe4VcaN4rLXpy/edit?usp=sharing&ouid=115377183336375393232&rtpof=true&sd=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </li>
       </ul>
     </nav>
   );

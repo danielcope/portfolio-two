@@ -16,12 +16,44 @@ const Home = () => {
       </header>
       <div className="spacer-line"></div>
       <section className="socials-container">
-        <FontAwesomeIcon className="fontAweIcon" icon={faEnvelope} />
-        <FontAwesomeIcon className="fontAweIcon" icon={faLinkedinIn} />
-        <FontAwesomeIcon className="fontAweIcon" icon={faGithub} />
-        <FontAwesomeIcon className="fontAweIcon" icon={faInstagram} />
-        <FontAwesomeIcon className="fontAweIcon" icon={faFacebook} />
-        <FontAwesomeIcon className="fontAweIcon" icon={faBookOpen} />
+        <a href="mailto: daniel.ash.cope@gmail.com">
+          <FontAwesomeIcon className="fontAweIcon" icon={faEnvelope} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/daniel-cope-60853213/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className="fontAweIcon" icon={faLinkedinIn} />
+        </a>
+        <a
+          href="https://github.com/danielcope"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className="fontAweIcon" icon={faGithub} />
+        </a>
+        <a
+          href="https://www.instagram.com/daniel_ashton_cope/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className="fontAweIcon" icon={faInstagram} />
+        </a>
+        <a
+          href="https://www.facebook.com/daniel.a.cope/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className="fontAweIcon" icon={faFacebook} />
+        </a>
+        <a
+          href="https://docs.google.com/document/d/1yn6Z8WsOq5tiv36tobqIe4VcaN4rLXpy/edit?usp=sharing&ouid=115377183336375393232&rtpof=true&sd=true"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className="fontAweIcon" icon={faBookOpen} />
+        </a>
       </section>
     </section>
   );

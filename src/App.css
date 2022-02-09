@@ -119,6 +119,22 @@ nav ul {
   z-index: 3;
 }
 
+nav li {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+}
+
+nav > a {
+  display: flex;
+  width: 110px;
+}
+
+nav a:hover {
+  font-size: 3.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
 .nav-opened {
   top: 0;
   left: 0;
@@ -194,11 +210,6 @@ nav ul {
   right: 10px;
 }
 
-nav > a {
-  display: flex;
-  width: 110px;
-}
-
 /* #endregion */
 
 /* #region Home */
@@ -216,17 +227,30 @@ nav > a {
 }
 
 .socials-container {
-  padding: 8rem 0;
   height: 35%;
   width: 80%;
+  max-width: 700px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
+.socials-container a {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 3rem;
+}
+
 .fontAweIcon {
-  font-size: 3.4rem;
-  margin: 3rem;
+  font-size: 4.2rem;
+}
+
+.fontAweIcon:hover {
+  font-size: 4.6rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .spacer-line {
@@ -246,10 +270,13 @@ nav > a {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  padding: 45px 0;
 }
 
 .about-me p {
   width: 60%;
+  max-width: 400px;
+  margin: 35px 0;
 }
 
 .about-me section {
@@ -298,17 +325,25 @@ nav > a {
   padding: 25px 0 0 0;
 }
 
+.work h3 {
+  margin: 20px 0;
+}
+
 .work-container {
   min-height: 700px;
   width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .each-work {
   width: 100%;
+  max-width: 800px;
   min-height: 500px;
   background: #f0f0f010;
   margin: 25px 0 0 0;
-  padding: 35px 15px 25px 35px;
+  padding: 35px 35px;
   border-radius: 15px;
 }
 
@@ -335,6 +370,7 @@ nav > a {
 
 .each-work img {
   width: 90%;
+  max-width: 350px;
   margin: 45px 0 0 0;
   border-radius: 7.5px;
 }
@@ -363,3 +399,44 @@ nav > a {
   background: #000000a6;
 }
 /* #endregion */
+
+@media screen and (min-width: 1023px) {
+  body {
+    margin: 0 0 0 400px;
+  }
+
+  .nav-closed,
+  .nav-opened {
+    left: 0;
+    width: 400px;
+  }
+
+  .about-me p {
+    width: 40%;
+    font-size: 2rem;
+  }
+
+  .each-work p {
+    font-size: 1.8rem;
+  }
+
+  .each-work h5 {
+    font-size: 2.8rem;
+  }
+
+  .each-work h6 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  body {
+    margin: 0 0 0 600px;
+  }
+
+  .nav-closed,
+  .nav-opened {
+    left: 0;
+    width: 600px;
+  }
+}
