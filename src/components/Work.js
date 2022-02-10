@@ -56,7 +56,7 @@ const WorkContainer = () => {
       imgAlt: "simplop.com site img",
       summary:
         "A full stack web application with a React frontend. A training tool for parents with potty training children. It utilizes Redux, React Routing, and CSS on the front end. Node.js, Express, and PostgreSQL are used on the back end for API requests, data transfer/storage and database queries.",
-      url: "https://www.roadrunnerstrucks.com/",
+      url: "https://simplop.com/",
     },
   ];
 
