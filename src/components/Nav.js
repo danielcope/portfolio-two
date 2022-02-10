@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <section>
       <MenuButton menu={menu} flipMenu={flipMenu} />
-      <NavMenu menu={menu} />
+      <NavMenu menu={menu} flipMenu={flipMenu} />
     </section>
   );
 };
@@ -17,9 +17,11 @@ const NavMenu = (props) => {
       <DCLogo menu={props.menu} />
       <ul>
         <li>
-          <a href="#about-me">About</a>
+          <a href="#about-me" onClick={() => props.flipMenu(false)}>
+            About
+          </a>
         </li>
-        <li>
+        <li onClick={() => props.flipMenu(false)}>
           <a href="#work">Work</a>
         </li>
         <li>

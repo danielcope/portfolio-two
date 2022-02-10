@@ -138,16 +138,18 @@ nav a:hover {
   top: 0;
   left: 0;
   transition: all 0.5s ease-in-out;
+  z-index: 3;
 }
 .nav-closed {
   top: 0px;
   left: -615px;
   transition: all 0.5s ease-in-out;
+  z-index: 3;
 }
 
 .ham-button-container {
-  width: 35px;
-  height: 25px;
+  width: 25px;
+  height: 16px;
   position: fixed;
   left: 25px;
   top: 25px;
@@ -169,7 +171,7 @@ nav a:hover {
 
 .top-line-x {
   transform: rotate(45deg);
-  top: 11px;
+  top: 7.25px;
 }
 
 .mid-line-x {
@@ -178,7 +180,7 @@ nav a:hover {
 
 .bot-line-x {
   transform: rotate(-45deg);
-  top: -11px;
+  top: -7.25px;
 }
 
 .top-line-x,
