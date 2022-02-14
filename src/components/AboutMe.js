@@ -45,7 +45,7 @@ const StackRow = (props) => {
   return (
     <li>
       <FontAwesomeIcon className="stack-icon" icon={props.icon} />
-      <span >{props.tech}</span>
+      <span>{props.tech}</span>
     </li>
   );
 };

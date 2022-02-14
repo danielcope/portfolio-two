@@ -76,11 +76,11 @@ const WorkContainer = () => {
 
 const EachWork = (props) => {
   return (
-    <section className="each-work" data-aos="fade-left" data-aos-duration="500">
+    <section className="each-work">
       <h5>
         <a href={props.url} target="_blank" rel="noopener noreferrer">
-          {props.name}{" "}
           <FontAwesomeIcon className="fa-link-icon" icon={faLink} />
+          {props.name}
         </a>
       </h5>
       <img src={props.img} alt={props.imgAlt} />
