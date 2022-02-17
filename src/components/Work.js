@@ -39,7 +39,7 @@ const WorkContainer = () => {
       img: aqt,
       imgAlt: "adventure quest log site img",
       summary:
-        "A tracking tool for DnD enthusiasts. This full-stack application use React, React Router, Redux, and CSS for the frontend and Node.js, Express, and PostgreSQL for the back end. It pulls from an 3rd party API for some data about spells. It has full CRUD authentication with Bcrypt.",
+        "A tracking tool for DnD enthusiasts. This full-stack application use React, React Router, Redux, and CSS for the frontend and Node.js, Express, and PostgreSQL for the back end. It pulls from a 3rd party API for some data about spells. It has full CRUD authentication with Bcrypt.",
       url: "https://adventurequestlog.com/",
     },
     {
