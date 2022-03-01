@@ -53,7 +53,7 @@ const MenuButton = (props) => {
 
 const DCLogo = (props) => {
   return (
-    <a href="#home">
+    <a href="#home" onClick={() => props.flipMenu(false)}>
       <div className={!props.menu ? "d-letter" : "d-letter-flipped"}>
         <span>D</span>
       </div>
