@@ -5,17 +5,20 @@ import {
   faAws,
   faHtml5,
   faCss3Alt,
+  faPython,
+  faAngular,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 const AboutMe = () => {
   const tech = [
     { icon: faReact, tech: "React" },
-    { icon: faHtml5, tech: "HTML5" },
-    { icon: faCss3Alt, tech: "CSS3" },
+    { icon: faPython, tech: "Python" },
+    { icon: faAngular, tech: "AngularJs" },
     { icon: faNodeJs, tech: "Node.js" },
     { icon: faAws, tech: "AWS" },
     { icon: faDatabase, tech: "PostgreSQL" },
+    { icon: faDatabase, tech: "MySQL" },
   ];
 
   const mappedTech = tech.map((ele, i) => (
@@ -29,9 +32,10 @@ const AboutMe = () => {
         <p>
           I’m a full-stack web developer, frontend and backend. I’m passionate
           about creating new a exciting products. I have mostly work with React,
-          Node.js, Express, PostgreSQL, and AWS. <br></br>
-          <br></br> I’m also a big rock climber and an adventurer. I moved to
-          Utah from California a few years ago to be closer to the mountains.{" "}
+          Python, Node.js, PostgreSQL, and AWS. <br></br>
+          <br></br> I’m also a big rock climber and am always looking for a new
+          adventure. I moved to Utah from California a few years ago to be
+          closer to the mountains.{" "}
         </p>
       </section>
       <section className="stack">
