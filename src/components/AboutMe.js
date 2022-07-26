@@ -3,8 +3,6 @@ import {
   faReact,
   faNodeJs,
   faAws,
-  faHtml5,
-  faCss3Alt,
   faPython,
   faAngular,
 } from "@fortawesome/free-brands-svg-icons";
