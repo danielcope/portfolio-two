@@ -35,14 +35,6 @@ const WorkContainer = () => {
       url: "https://hingeplayground.com/",
     },
     {
-      name: "Adventure Quest",
-      img: aqt,
-      imgAlt: "adventure quest log site img",
-      summary:
-        "A tracking tool for DnD enthusiasts. This full-stack application use React, React Router, Redux, and CSS for the frontend and Node.js, Express, and PostgreSQL for the back end. It pulls from a 3rd party API for some data about spells. It has full CRUD authentication with Bcrypt.",
-      url: "https://adventurequestlog.com/",
-    },
-    {
       name: "Roadrunners Trucking",
       img: rrtrucks,
       imgAlt: "Roadrunners Trucking site img",
@@ -51,12 +43,20 @@ const WorkContainer = () => {
       url: "https://www.roadrunnerstrucks.com/",
     },
     {
+      name: "Adventure Quest",
+      img: aqt,
+      imgAlt: "adventure quest log site img",
+      summary:
+        "A tracking tool for DnD enthusiasts. This full-stack application use React, React Router, Redux, and CSS for the frontend and Node.js, Express, and PostgreSQL for the back end. It pulls from a 3rd party API for some data about spells. It has full CRUD authentication with Bcrypt.",
+      url: "https://github.com/danielcope/adventure-pack",
+    },
+    {
       name: "Simplop",
       img: simplop,
       imgAlt: "simplop.com site img",
       summary:
         "A full stack web application with a React frontend. A training tool for parents with potty training children. It utilizes Redux, React Routing, and CSS on the front end. Node.js, Express, and PostgreSQL are used on the back end for API requests, data transfer/storage and database queries.",
-      url: "https://simplop.com/",
+      url: "https://github.com/danielcope/Simplop",
     },
   ];
 
